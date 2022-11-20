@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Nguyen</title>
+    <link rel="icon" href="./assets/img/slider/" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+   
+        <div id="header">
+            <!--Begin nav-->
+            <ul id="nav">
+                <li><a href="#">Trang chủ</a></li> 
+                <li><a href="#band">Xem biểu đồ</a></li>
+                <li><a href="#tour">Lọc dữ liệu</a></li>
+                <li><a href="#contact">Đăng nhập</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Đăng kí</a></li>
+                        <li><a href="#">Kết nối</a></li>
+                        <li><a href=" http://127.0.0.1:1880/ui">Node-RED</a></li>
+                    </ul>
+                </li>
+            </ul>
+             <!--End nav-->
+
+            <!--Begin search button-->
+            <div class="search-btn">
+                <i class="search-ion ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-view-list-alt"></i>
+            </div>
+            <!--End search button-->
+
+        </div>
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">ĐỒ ÁN TỐT NGHIỆP</h2>
+                <div class="text-description">Hệ thống thu thập dữ liệu lò sấy.</div>
+            </div>
+        </div>
+        <div id="content">
+            <!-- about section -->
+
+            <div id="band" class="content-section">
+                <h2 class="section-heading">Giới thiệu đề tài</h2>
+                <p class="section-sub-heading">From TDTU with love</p>
+                <p class="about-text">
+                    Nghiên cứu, thiết kế và ứng dụng công nghệ xử lý ảnh vào quá trình sấy. Với kỹ thuật này hệ thống dễ dàng thu thập dữ liệu về nhiệt độ, độ ẩm và khối lượng của đối tượng sấy trong các mốc thời gian xác định rồi lưu trữ trên Mongo Database thông qua phần mềm Node-red. Bộ điều khiển PID lấy các dữ liệu đã được lưu trữ, thực hiện tính toán rồi so sánh kết quả với giá trị đặt từ đó đưa ra tín hiệu điều khiển để điều khiển tác nhân sấy đi vào buồng sấy. Nhóm nghiên cứu cải tiến, phát triển hệ thống để việc thu thập số liệu thô từ thiết bị trở nên tự động, kịp thời và chính xác hơn.
+
+                </p>
+                <div class="row member-list">
+                    <div class="s-col-full mt-32 col col-third text-center">
+                        <p class="member-name">Nguyễn Tấn Thành</p>
+                        <img src="./assets/img/team/member1.jpg" alt="Name" class="member-img">
+                    </div>
+                
+                    <div class="s-col-full mt-32 col col-third text-center">
+                        <p class="member-name">Nguyễn Thanh Nguyên</p>
+                        <img src="./assets/img/team/member1.jpg" alt="Name" class="member-img">
+                    </div>
+                
+                    <div class="s-col-full mt-32 col col-third text-center">
+                        <p class="member-name">Nguyễn Hoàng Nam</p>
+                        <img src="./assets/img/team/member1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+            <!-- Tour section -->
+            <div id="tour" class="tour-section">
+             
+                <div class="content-section">
+                    <img src="./assets/img/slider/D-DT-1.jpg" alt="">
+.text-white {
+                    <h2 class="section-heading text-white">KHOA ĐIỆN-ĐIỆN TỬ </h2>
+                    <p class="section-sub-heading text-white">Ngành kỹ thuật điều khiển và tự động hóa</p>
+                   <!-- Ticket -->
+                    <!-- <ul class="ticket-list">
+                        <li>Septemper <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul> -->
+                    <div class="form-validator">
+                        <form action="" method="POST" class="form" id="form-1">
+                            <h3 class="heading">Thành viên đăng ký</h3>
+                            <p class="desc">Hệ thống giám sát dữ liệu lò sấy ❤️</p>
+                        
+                            <div class="spacer"></div>
+                        
+                            <div class="form-group ">
+                              <label for="fullname" class="form-label">Tên đầy đủ</label>
+                              <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Tấn Thành" class="form-control">
+                              <span class="form-message"></span>
+                            </div>
+                        
+                            <div class="form-group">
+                              <label for="email" class="form-label">Email</label>
+                              <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                              <span class="form-message"></span>
+                            </div>
+                        
+                            <div class="form-group">
+                              <label for="password" class="form-label">Mật khẩu</label>
+                              <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                              <span class="form-message"></span>
+                            </div>
+                        
+                            <div class="form-group">
+                              <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                              <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                              <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                              <label for="password_confirmation" class="form-label">Giới tính</label>
+                              <div>
+                              <input  name="gender" value="male" type="radio" class="form-control">
+                              Nam
+                              </div>
+                              <div>
+                              <input  name="gender" value="female" type="radio" class="form-control">
+                              Nữ
+                              </div>
+                              <div>
+                                <input  name="gender" value="other" type="radio" class="form-control">
+                                Khác
+                              </div>
+                              <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                              <label for="Avatar" class="form-label">Ảnh đại diện</label>
+                              <input id="avatar" name="avatar"  type="file" class="form-control">
+                              <span class="form-message"></span>
+                            </div>
+                        
+                            <button class="form-submit">Đăng ký</button>
+                          </form>
+                  
+                    </div>
+                    <!-- Place -->
+                    <div class="row place-list">
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./assets/img/data/temparature.png" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Dữ liệu nhiệt độ</h3>
+                                <p class="place-time">Real time</p>
+                                <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button href="#" class="btn js-buy-ticket s-full-width">Xem cụ thể</button>
+                            </div>
+                        </div>
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./assets/img/data/humidity.png" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Dữ liệu độ ẩm</h3>
+                                <p class="place-time">Real time</p>
+                                <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button href="#" class="btn js-buy-ticket s-full-width">Xem cụ thể</button>
+                            </div>
+                        </div>
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./assets/img/data/par.jfif" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Dữ liệu áp suất</h3>
+                                <p class="place-time">Real time</p>
+                                <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button href="#" class="btn js-buy-ticket s-full-width">Xem cụ thể</button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Begin Contact section -->
+            <div id="contact" class="content-section">
+                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-infor">
+                        <p><i class="ti-location-pin"></i>19 Nguyễn Hữu Thọ</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tell:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="email" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class="contact-submit-btn btn mt-16 pull-right s-full-width" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End contact section -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-skype"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
+        </div>
+        
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag">
+                    Tickets
+                </i>
+            </header>
+            
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-lable">
+                  
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+
+                <label for="ticket-email" class="modal-lable">
+                    
+                    <i class="ti-user"></i>
+                    Sent to
+                </label>
+                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email...">
+                <button class="buy-tickets">Pay
+                    <i class="ti-check"></i>
+                </button> 
+
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">Help?</a></p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+        var xyValues = [
+            {x:50, y:7},
+            {x:60, y:8},
+            {x:70, y:8},
+            {x:80, y:9},
+            {x:90, y:9},
+            {x:100, y:9},
+            {x:110, y:10},
+            {x:120, y:11},
+            {x:130, y:14},
+            {x:140, y:14},
+            {x:150, y:15}
+            ];
+            new Chart("myChart", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgba(0,0,255,1)",
+      data: xyValues
+    }]
+  },
+  options:{}
+});
+
+        const byBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHight = header.clientHeight;
+        console.log( mobileMenu)
+
+
+        function ShowBuyTickets () {
+            modal.classList.add('open')
+        }
+        function hideBuyTickets () {
+            modal.classList.remove('open')
+        }
+        mobileMenu.onclick = function() {
+            var isClosed =  header.clientHeight ===headerHight;
+            if (isClosed) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = null;
+            }
+            console.log(header.clientHeight)
+        }
+        for ( const byBtn of byBtns ) {
+            byBtn.addEventListener('click',ShowBuyTickets)
+            // hanh vi nguoi dung trong nay
+        modalClose.addEventListener('click',hideBuyTickets)
+        modal.addEventListener('click',hideBuyTickets)
+        modalContainer.addEventListener('click',function (event) {
+            event.stopPropagation()
+        })
+        }
+        // tu dong dong cac phan  tu trong menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for ( var i = 0; i< menuItems.length;i++) {
+            var menuItem = menuItems[i]
+            menuItem.onclick = function(event) {
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+            if (!isParentMenu) {
+                header.style.height = null;
+            } else {
+                event.preventDefault(); 
+            }
+            }
+        }
+        const fetchData = async() => {
+            const data = await fetch('http://localhost:3000/weather/get-weather')
+            console.log(await data.json())
+
+        }
+        fetchData()
+    </script>
+</body>
+</html>
